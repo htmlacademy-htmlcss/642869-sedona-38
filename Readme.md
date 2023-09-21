@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Таранов](https://up.htmlacademy.ru/htmlcss/38/user/642869).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
