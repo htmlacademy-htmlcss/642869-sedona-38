@@ -6,9 +6,8 @@
     <base href="https://htmlacademy-htmlcss.github.io/642869-sedona-38/2/">
 </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
-        <h2>Навигация по сайту</h2>
         <a>
           <img class="logo" src="#" alt="Логотип сайта городка Седона">
         </a>
@@ -31,7 +30,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">В избранном</span>
+              <span>12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -40,9 +40,14 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <h1 class="visualyy-hidden">Седона - лучшее место для отдыха и туризма</h1>
-      <section class="advantages">
+    <main class="main-index" data-test="main">
+      <h1 class="visually-hidden">Седона - лучшее место для отдыха и туризма</h1>
+      <section class="promo" data-test="hero">
+        <h2 class="visually-hidden">Промо-блок</h2>
+        <p class="visually-hidden">Welcome to the gorgeous SEDONA</p>
+        <q class="visually-hidden">Because the Grand Canyon sucks!</q>
+      </section>
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества нашего городка</h2>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -90,42 +95,44 @@
           </li>
         </ul>
       </section>
-      <section class="searchHotel">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p class="searchHotel-title"><em>Заинтересовались?</em></p>
+      <section class="search" data-test="search">
+        <h2 class="search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button" type="button">Поиск гостиницы в Седоне</button>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
-        <p class="subscribe-title"><em>Подпишитесь на рассылку</em></p>
+      <section class="subscribe" data-test="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="field" type="email" name="subscribe-email" id="subscribe-email" required>
+          <input class="field" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <ul>
-        <li>
-          <a href="https://vk.com/htmlacademy">
+    <footer class="page-footer" data-test="footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
-        <li>
-          <a href="https://t.me/htmlacademy">
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li>
-          <a href="https://www.youtube.com/user/htmlacademyru">
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru">html academy</a>
+      <p class="contacts">
+        <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <a class="logo-link" href="https://htmlacademy.ru">
+        <img src="logo-img" alt="Логотип HTML Academy">
+      </a>
     </footer>
   </body>
 </html>
